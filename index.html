@@ -113,8 +113,8 @@ text-decoration:none;
 }
 
 </style>
-<script type="text/javascript" src="https://www.dropbox.com/s/a3buu5u2re0s9fh/jquery-1.2.1.js?dl=0"></script>
-<script type="text/javascript" src="https://www.dropbox.com/s/bt9xnz24r1t01ii/ui.sortable.js?dl=0"></script>
+<script type="text/javascript" src="js/jquery-1.2.1.js"></script>
+<script type="text/javascript" src="js/ui.sortable.js"></script>
 </head>
 <body>
 	
@@ -278,6 +278,8 @@ text-decoration:none;
 </ul>
 
 <script type="text/javascript">
+$( document ).ready(function() {
+
 	var totalItems = $('#0 li').length;
 	//Shuffle the list
 	$('#0').shuffle();
@@ -420,6 +422,7 @@ text-decoration:none;
 			}
 			return false;
 		});
+});
 </script>
 </body>
 </html>
